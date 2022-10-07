@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>My Youtube Resource Gallery</title>
+		<link rel="stylesheet" href="app.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<div>
+					<h1 class="headline">My Youtube Resource Gallery</h1>
+					<p>
+						The perfect app to keep track the valuable resources while learning
+						to code. As you come across a helpful video, add the id here.
+					</p>
+				</div>
+
+				<form action="">
+					<label for="videoId">Video Id</label>
+					<input
+						type="text"
+						name="videoId"
+						id="videoId"
+						placeholder="rEa99-NQ9Bk"
+					/>
+					<button onclick="saveVideo(event)">Save The Video!</button>
+				</form>
+			</div>
+			<ul id="videosContainer"></ul>
+		</div>
+
+		<div id="popup" onclick="handlePopupClick()" class="closed">
+			<iframe
+				width="560"
+				height="315"
+				frameborder="0"
+				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
